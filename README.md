@@ -169,4 +169,4 @@ Note: The inputs must only contain digits [0-9]. Decimal points, negative number
 
 http://localhost:3000
 
-![Pic3](./exercise-2/public/img/pic3.png)
+![Pic3](./exercise-2/public/img/pic3.gif)

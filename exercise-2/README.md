@@ -117,4 +117,4 @@ Note: The inputs must only contain digits [0-9]. Decimal points, negative number
 
 http://localhost:3000
 
-![Pic3](./public/img/pic3.png)
+![Pic3](./public/img/pic3.gif)
