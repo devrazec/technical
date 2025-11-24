@@ -113,19 +113,19 @@ Note: The inputs must only contain digits [0-9]. Decimal points, negative number
 
 | Features | 
 |----------|
-| Store integer up to 15–16 digits.
-| Switches to scientific notation in the array.
-| Sort numbers in the arrays.
-| Boxes to auto-resize with content.
-| Scrollable area.
-| Tailwind card style.
-| Allows wrapping the numbers.
-| Show full number.
-| Display the result nicely formatted.
-| Numbers are sorted while empty slots stay at the end.
-| Array always has 6 positions.
-| New numbers fill the first empty spot.
-| Clean all arrays and fields.
+| Store integer up to 15–16 digits. |
+| Switches to scientific notation in the array. |
+| Sort numbers in the arrays. |
+| Boxes to auto-resize with content. |
+| Scrollable area. |
+| Tailwind card style. |
+| Allows wrapping the numbers. |
+| Show full number. |
+| Display the result nicely formatted. |
+| Numbers are sorted while empty slots stay at the end. |
+| Array always has 6 positions. |
+| New numbers fill the first empty spot. |
+| Clean all arrays and fields. |
 
 ## Utils Tests
 
@@ -133,12 +133,12 @@ Note: The inputs must only contain digits [0-9]. Decimal points, negative number
 
 | Jest Unit Tests | 
 |-----------------|
-| Add to array
-| Array updating
-| Integer Validation
-| Sorting Numbers
-| Multiplication
-| Clean arrays and fields
+| Add to array |
+| Array updating |
+| Integer Validation |
+| Sorting Numbers |
+| Multiplication |
+| Clean arrays and fields |
 
 ## Content Tests
 
@@ -146,24 +146,24 @@ Note: The inputs must only contain digits [0-9]. Decimal points, negative number
 
 | Jest Unit Tests | 
 |-----------------|
-| Rendering
-| Input typing
-| Clean All
-| Add New
-| BigInt multiplication
+| Rendering |
+| Input typing |
+| Clean All |
+| Add New |
+| BigInt multiplication |
 
 ## Commands
 
 | CMD | Description |
 |-----|-------------|
-| npm run build | Build the project
-| npm run dev | Run the project 
-| npm run start | Run the project from the built folder (.next)
-| npm run lint | Check code quality, errors, best practices.
-| npm run format | Code formatting, style consistency.
-| npm run test | Run all tests.
-| npm run test -- __tests__/content.test.js | Run tests for the components.
-| npm run test -- __tests__/utils.test.js | Run tests for functions.
+| npm run build | Build the project. |
+| npm run dev | Run the project. | 
+| npm run start | Run the project from the built folder (.next). |
+| npm run lint | Check code quality, errors, best practices. |
+| npm run format | Code formatting, style consistency. |
+| npm run test | Run all tests. |
+| npm run test -- __tests__/content.test.js | Run tests for the components. |
+| npm run test -- __tests__/utils.test.js | Run tests for functions. |
 
 ## Web Interface
 
