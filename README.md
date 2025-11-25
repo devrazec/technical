@@ -225,6 +225,7 @@ Note: The inputs must only contain digits [0-9]. Decimal points, negative number
 
 | CMD | Description |
 |-----|-------------|
+| npm run install | Install the dependencies. |
 | npm run build | Build the project. |
 | npm run dev | Run the project. | 
 | npm run start | Run the project from the built folder (.next). |
