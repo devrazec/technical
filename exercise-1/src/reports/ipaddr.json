@@ -1,0 +1,919 @@
+[
+    {
+        "ip": "192.168.0.76",
+        "bytes": 273150,
+        "bytes_percentage": 2.22,
+        "requests": 4,
+        "requests_percentage": 2.35
+    },
+    {
+        "ip": "192.168.0.43",
+        "bytes": 176208,
+        "bytes_percentage": 1.43,
+        "requests": 3,
+        "requests_percentage": 1.76
+    },
+    {
+        "ip": "192.168.0.88",
+        "bytes": 222149,
+        "bytes_percentage": 1.81,
+        "requests": 3,
+        "requests_percentage": 1.76
+    },
+    {
+        "ip": "192.168.0.100",
+        "bytes": 124518,
+        "bytes_percentage": 1.01,
+        "requests": 3,
+        "requests_percentage": 1.76
+    },
+    {
+        "ip": "192.168.0.36",
+        "bytes": 226615,
+        "bytes_percentage": 1.84,
+        "requests": 3,
+        "requests_percentage": 1.76
+    },
+    {
+        "ip": "192.168.0.144",
+        "bytes": 197730,
+        "bytes_percentage": 1.61,
+        "requests": 3,
+        "requests_percentage": 1.76
+    },
+    {
+        "ip": "192.168.0.123",
+        "bytes": 166035,
+        "bytes_percentage": 1.35,
+        "requests": 3,
+        "requests_percentage": 1.76
+    },
+    {
+        "ip": "192.168.0.238",
+        "bytes": 186822,
+        "bytes_percentage": 1.52,
+        "requests": 3,
+        "requests_percentage": 1.76
+    },
+    {
+        "ip": "192.168.0.227",
+        "bytes": 175965,
+        "bytes_percentage": 1.43,
+        "requests": 3,
+        "requests_percentage": 1.76
+    },
+    {
+        "ip": "192.168.0.111",
+        "bytes": 102938,
+        "bytes_percentage": 0.84,
+        "requests": 2,
+        "requests_percentage": 1.18
+    },
+    {
+        "ip": "192.168.0.35",
+        "bytes": 144057,
+        "bytes_percentage": 1.17,
+        "requests": 2,
+        "requests_percentage": 1.18
+    },
+    {
+        "ip": "192.168.0.127",
+        "bytes": 162464,
+        "bytes_percentage": 1.32,
+        "requests": 2,
+        "requests_percentage": 1.18
+    },
+    {
+        "ip": "192.168.0.58",
+        "bytes": 144287,
+        "bytes_percentage": 1.17,
+        "requests": 2,
+        "requests_percentage": 1.18
+    },
+    {
+        "ip": "192.168.0.106",
+        "bytes": 175423,
+        "bytes_percentage": 1.43,
+        "requests": 2,
+        "requests_percentage": 1.18
+    },
+    {
+        "ip": "192.168.0.194",
+        "bytes": 172683,
+        "bytes_percentage": 1.4,
+        "requests": 2,
+        "requests_percentage": 1.18
+    },
+    {
+        "ip": "192.168.0.48",
+        "bytes": 175494,
+        "bytes_percentage": 1.43,
+        "requests": 2,
+        "requests_percentage": 1.18
+    },
+    {
+        "ip": "192.168.0.75",
+        "bytes": 122132,
+        "bytes_percentage": 0.99,
+        "requests": 2,
+        "requests_percentage": 1.18
+    },
+    {
+        "ip": "192.168.0.42",
+        "bytes": 138801,
+        "bytes_percentage": 1.13,
+        "requests": 2,
+        "requests_percentage": 1.18
+    },
+    {
+        "ip": "192.168.0.46",
+        "bytes": 137470,
+        "bytes_percentage": 1.12,
+        "requests": 2,
+        "requests_percentage": 1.18
+    },
+    {
+        "ip": "192.168.0.32",
+        "bytes": 145647,
+        "bytes_percentage": 1.18,
+        "requests": 2,
+        "requests_percentage": 1.18
+    },
+    {
+        "ip": "192.168.0.182",
+        "bytes": 134140,
+        "bytes_percentage": 1.09,
+        "requests": 2,
+        "requests_percentage": 1.18
+    },
+    {
+        "ip": "192.168.0.217",
+        "bytes": 155509,
+        "bytes_percentage": 1.26,
+        "requests": 2,
+        "requests_percentage": 1.18
+    },
+    {
+        "ip": "192.168.0.9",
+        "bytes": 133562,
+        "bytes_percentage": 1.09,
+        "requests": 2,
+        "requests_percentage": 1.18
+    },
+    {
+        "ip": "192.168.0.223",
+        "bytes": 167525,
+        "bytes_percentage": 1.36,
+        "requests": 2,
+        "requests_percentage": 1.18
+    },
+    {
+        "ip": "192.168.0.28",
+        "bytes": 119829,
+        "bytes_percentage": 0.97,
+        "requests": 2,
+        "requests_percentage": 1.18
+    },
+    {
+        "ip": "192.168.0.152",
+        "bytes": 156191,
+        "bytes_percentage": 1.27,
+        "requests": 2,
+        "requests_percentage": 1.18
+    },
+    {
+        "ip": "192.168.0.157",
+        "bytes": 122971,
+        "bytes_percentage": 1.0,
+        "requests": 2,
+        "requests_percentage": 1.18
+    },
+    {
+        "ip": "192.168.0.107",
+        "bytes": 161098,
+        "bytes_percentage": 1.31,
+        "requests": 2,
+        "requests_percentage": 1.18
+    },
+    {
+        "ip": "192.168.0.54",
+        "bytes": 181382,
+        "bytes_percentage": 1.47,
+        "requests": 2,
+        "requests_percentage": 1.18
+    },
+    {
+        "ip": "192.168.0.253",
+        "bytes": 68326,
+        "bytes_percentage": 0.56,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.231",
+        "bytes": 83280,
+        "bytes_percentage": 0.68,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.176",
+        "bytes": 72407,
+        "bytes_percentage": 0.59,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.92",
+        "bytes": 81797,
+        "bytes_percentage": 0.67,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.14",
+        "bytes": 71292,
+        "bytes_percentage": 0.58,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.61",
+        "bytes": 83483,
+        "bytes_percentage": 0.68,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.146",
+        "bytes": 63448,
+        "bytes_percentage": 0.52,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.44",
+        "bytes": 84838,
+        "bytes_percentage": 0.69,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.160",
+        "bytes": 75385,
+        "bytes_percentage": 0.61,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.45",
+        "bytes": 81728,
+        "bytes_percentage": 0.66,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.96",
+        "bytes": 50715,
+        "bytes_percentage": 0.41,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.254",
+        "bytes": 89583,
+        "bytes_percentage": 0.73,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.132",
+        "bytes": 89926,
+        "bytes_percentage": 0.73,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.170",
+        "bytes": 66953,
+        "bytes_percentage": 0.54,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.66",
+        "bytes": 80595,
+        "bytes_percentage": 0.66,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.178",
+        "bytes": 70666,
+        "bytes_percentage": 0.57,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.154",
+        "bytes": 79145,
+        "bytes_percentage": 0.64,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.228",
+        "bytes": 91282,
+        "bytes_percentage": 0.74,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.26",
+        "bytes": 85483,
+        "bytes_percentage": 0.7,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.219",
+        "bytes": 93443,
+        "bytes_percentage": 0.76,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.235",
+        "bytes": 72258,
+        "bytes_percentage": 0.59,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.234",
+        "bytes": 96416,
+        "bytes_percentage": 0.78,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.236",
+        "bytes": 91071,
+        "bytes_percentage": 0.74,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.56",
+        "bytes": 85590,
+        "bytes_percentage": 0.7,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.83",
+        "bytes": 94688,
+        "bytes_percentage": 0.77,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.21",
+        "bytes": 94076,
+        "bytes_percentage": 0.76,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.243",
+        "bytes": 58574,
+        "bytes_percentage": 0.48,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.209",
+        "bytes": 93432,
+        "bytes_percentage": 0.76,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.5",
+        "bytes": 72354,
+        "bytes_percentage": 0.59,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.49",
+        "bytes": 65846,
+        "bytes_percentage": 0.54,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.249",
+        "bytes": 50809,
+        "bytes_percentage": 0.41,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.202",
+        "bytes": 55884,
+        "bytes_percentage": 0.45,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.120",
+        "bytes": 68681,
+        "bytes_percentage": 0.56,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.41",
+        "bytes": 82750,
+        "bytes_percentage": 0.67,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.59",
+        "bytes": 83689,
+        "bytes_percentage": 0.68,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.210",
+        "bytes": 57398,
+        "bytes_percentage": 0.47,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.207",
+        "bytes": 93101,
+        "bytes_percentage": 0.76,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.70",
+        "bytes": 93195,
+        "bytes_percentage": 0.76,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.171",
+        "bytes": 90152,
+        "bytes_percentage": 0.73,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.181",
+        "bytes": 87242,
+        "bytes_percentage": 0.71,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.198",
+        "bytes": 84757,
+        "bytes_percentage": 0.69,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.135",
+        "bytes": 73338,
+        "bytes_percentage": 0.6,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.13",
+        "bytes": 51257,
+        "bytes_percentage": 0.42,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.165",
+        "bytes": 67675,
+        "bytes_percentage": 0.55,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.239",
+        "bytes": 66511,
+        "bytes_percentage": 0.54,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.211",
+        "bytes": 58433,
+        "bytes_percentage": 0.48,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.201",
+        "bytes": 81865,
+        "bytes_percentage": 0.67,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.134",
+        "bytes": 51075,
+        "bytes_percentage": 0.42,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.73",
+        "bytes": 69577,
+        "bytes_percentage": 0.57,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.159",
+        "bytes": 93843,
+        "bytes_percentage": 0.76,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.161",
+        "bytes": 82345,
+        "bytes_percentage": 0.67,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.142",
+        "bytes": 90239,
+        "bytes_percentage": 0.73,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.250",
+        "bytes": 58629,
+        "bytes_percentage": 0.48,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.64",
+        "bytes": 35134,
+        "bytes_percentage": 0.29,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.17",
+        "bytes": 61621,
+        "bytes_percentage": 0.5,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.55",
+        "bytes": 65842,
+        "bytes_percentage": 0.54,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.168",
+        "bytes": 78852,
+        "bytes_percentage": 0.64,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.245",
+        "bytes": 58068,
+        "bytes_percentage": 0.47,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.102",
+        "bytes": 95221,
+        "bytes_percentage": 0.77,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.10",
+        "bytes": 60670,
+        "bytes_percentage": 0.49,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.109",
+        "bytes": 59454,
+        "bytes_percentage": 0.48,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.114",
+        "bytes": 106375,
+        "bytes_percentage": 0.86,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.136",
+        "bytes": 81322,
+        "bytes_percentage": 0.66,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.147",
+        "bytes": 59734,
+        "bytes_percentage": 0.49,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.40",
+        "bytes": 58221,
+        "bytes_percentage": 0.47,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.197",
+        "bytes": 55265,
+        "bytes_percentage": 0.45,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.124",
+        "bytes": 57733,
+        "bytes_percentage": 0.47,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.116",
+        "bytes": 66753,
+        "bytes_percentage": 0.54,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.206",
+        "bytes": 94278,
+        "bytes_percentage": 0.77,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.4",
+        "bytes": 51312,
+        "bytes_percentage": 0.42,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.139",
+        "bytes": 61937,
+        "bytes_percentage": 0.5,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.156",
+        "bytes": 77637,
+        "bytes_percentage": 0.63,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.215",
+        "bytes": 13446,
+        "bytes_percentage": 0.11,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.162",
+        "bytes": 72831,
+        "bytes_percentage": 0.59,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.173",
+        "bytes": 94428,
+        "bytes_percentage": 0.77,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.125",
+        "bytes": 63817,
+        "bytes_percentage": 0.52,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.205",
+        "bytes": 73877,
+        "bytes_percentage": 0.6,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.213",
+        "bytes": 64098,
+        "bytes_percentage": 0.52,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.184",
+        "bytes": 92958,
+        "bytes_percentage": 0.76,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.169",
+        "bytes": 27640,
+        "bytes_percentage": 0.22,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.189",
+        "bytes": 70157,
+        "bytes_percentage": 0.57,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.101",
+        "bytes": 65258,
+        "bytes_percentage": 0.53,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.158",
+        "bytes": 73163,
+        "bytes_percentage": 0.59,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.216",
+        "bytes": 65859,
+        "bytes_percentage": 0.54,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.230",
+        "bytes": 78978,
+        "bytes_percentage": 0.64,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.129",
+        "bytes": 98893,
+        "bytes_percentage": 0.8,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.196",
+        "bytes": 91119,
+        "bytes_percentage": 0.74,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.180",
+        "bytes": 65315,
+        "bytes_percentage": 0.53,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.15",
+        "bytes": 76537,
+        "bytes_percentage": 0.62,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.53",
+        "bytes": 84158,
+        "bytes_percentage": 0.68,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.94",
+        "bytes": 78407,
+        "bytes_percentage": 0.64,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.115",
+        "bytes": 98404,
+        "bytes_percentage": 0.8,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.183",
+        "bytes": 83117,
+        "bytes_percentage": 0.68,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.212",
+        "bytes": 95100,
+        "bytes_percentage": 0.77,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.118",
+        "bytes": 93115,
+        "bytes_percentage": 0.76,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.27",
+        "bytes": 92355,
+        "bytes_percentage": 0.75,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.85",
+        "bytes": 56343,
+        "bytes_percentage": 0.46,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.240",
+        "bytes": 73555,
+        "bytes_percentage": 0.6,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.50",
+        "bytes": 75338,
+        "bytes_percentage": 0.61,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.51",
+        "bytes": 82197,
+        "bytes_percentage": 0.67,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.167",
+        "bytes": 85372,
+        "bytes_percentage": 0.69,
+        "requests": 1,
+        "requests_percentage": 0.59
+    },
+    {
+        "ip": "192.168.0.195",
+        "bytes": 44179,
+        "bytes_percentage": 0.36,
+        "requests": 1,
+        "requests_percentage": 0.59
+    }
+]

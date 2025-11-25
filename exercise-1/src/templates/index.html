@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Report Generator</title>
+
+    <!-- Tabulator CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/tabulator.min.css') }}">
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #000;
+            padding: 25px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        label {
+            color: #fff;
+        }
+
+        #log-table {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">📊 CSV/JSON Report Generator</h1>
+
+    <!-- Download Buttons -->
+    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
+        <h2 style="margin: 0;">Daily Traffic Log Viewer</h2>
+        <div>
+            <h2 style="display: inline; margin-right: 15px;">Download as:</h2>
+            <button id="csvReportBtn" type="button" style="width: 70px; font-size: 1.25rem;">CSV</button>
+            <button id="jsonReportBtn" type="button" style="width: 70px; font-size: 1.25rem;">JSON</button>
+            <button id="pdfReportBtn" type="button" style="width: 70px; font-size: 1.25rem;">PDF</button>
+            <button id="xlsxReportBtn" type="button" style="width: 70px; font-size: 1.25rem;">XLSX</button>
+        </div>
+    </div>
+
+    <div id="log-table"></div>
+    <p style="padding-top: 10;">Note: The download reports CSV and JSON are sorted by the number of requests (DESC), STATUS is igual “OK” and saved automaticaly in the folder /src/reports. The download reports PDF and XLSX are following this Data Grid View where you can filter and sort data.</p>
+
+    <!-- Tabulator JS -->
+    <script src="{{ url_for('static', filename='assets/js/tabulator.min.js') }}"></script>
+
+    <!-- PDF -->
+    <script src="{{ url_for('static', filename='assets/js/jspdf.umd.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/jspdf.plugin.autotable.min.js') }}"></script>
+
+    <!-- XLSX -->
+    <script src="{{ url_for('static', filename='assets/js/xlsx.full.min.js') }}"></script>
+
+    <!-- Tabulator -->
+    <script>
+        var table = new Tabulator("#log-table", {
+            ajaxURL: "/api/table",
+            layout: "fitColumns",
+            responsiveLayout: "hide",
+            pagination: "local",
+            paginationSize: 20,
+            placeholder: "No Data Found",
+            columns: [
+                {
+                    title: "Date",
+                    headerHozAlign: "center",
+                    field: "TIMESTAMP",
+                    headerFilter: "input",
+                    hozAlign: "center",
+                    sorter: "string",
+                    headerFilterFunc: function (headerValue, rowValue, rowData, filterParams) {
+                        return rowValue === headerValue;
+                    }
+                },
+                {
+                    title: "IP Address",
+                    field: "REMOTE_ADDR",
+                    headerFilter: "input",
+                    headerHozAlign: "center",
+                    hozAlign: "center",
+                    bottomCalc: "count",
+                    bottomCalcFormatter: function (cell) {
+                        return "Total requests: " + cell.getValue();
+                    },
+                    headerFilterFunc: function (headerValue, rowValue, rowData, filterParams) {
+                        return rowValue === headerValue;
+                    }
+                },
+                {
+                    title: "Bytes / MB",
+                    field: "BYTES",
+                    headerHozAlign: "center",
+                    hozAlign: "right",
+                    formatter: function (cell) {
+                        return cell.getValue() + " / " + (cell.getValue() / (1024 * 1024)).toFixed(2) + " MB";
+                    },
+                    bottomCalc: "sum",
+                    bottomCalcFormatter: function (cell) {
+                        const totalMB = cell.getValue() / (1024 * 1024);
+                        return "Total sent: " + cell.getValue() + " / " + totalMB.toFixed(2) + " MB";
+                    }
+                },
+                { title: "Status", headerHozAlign: "center", field: "STATUS", hozAlign: "center", sorter: "string", headerFilter: "input" },
+            ],
+        });
+    </script>
+
+    <!-- Download Buttons -->
+    <script>
+        document.getElementById("csvReportBtn").addEventListener("click", function () {
+            window.location.href = "/api/csv_report";
+        });
+
+        document.getElementById("jsonReportBtn").addEventListener("click", function () {
+            window.location.href = "/api/json_report";
+        });
+
+        document.getElementById("pdfReportBtn").addEventListener("click", function () {
+            table.download("pdf", "daily_traffic_report.pdf", {
+                orientation: "portrait",
+                title: "Daily Traffic Report",
+                columnHeaders: true,
+                rowGroups: false,
+                columnGroups: false,
+                dataTree: false,
+            });
+        });
+
+        document.getElementById("xlsxReportBtn").addEventListener("click", function () {
+            table.download("xlsx", "daily_traffic_report.xlsx", { sheetName: "Daily Traffic" });
+        });
+    </script>
+
+</body>
+
+</html>
