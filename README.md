@@ -46,9 +46,78 @@ Although not required, including unit tests will also be taken into account.
 ````
 
 ````
-Steps: 
+Steps for new projects: 
+
+python3 -m venv venv
+source venv/bin/activate
+touch requirements.txt
+pip3 install Flask pytest pytest-flask
+pip3 freeze > requirements.txt
+
+Steps for old projects: 
+
+rm -rf venv
+python3 -m venv venv
+source venv/bin/activate
+pip3 install -r requirements.txt
+
+Create the Project Structure
 
 ````
+
+## Description
+
+This tool allows you to download reports in CSV, JSON, PDF, XLSX from a log file stored at /logfiles/requests.log. This file contains the traffic data per IP Address. The interface allows you to filter and sort data.
+
+Note: The download reports CSV and JSON are sorted by the number of requests (DESC), STATUS is igual “OK” and saved automaticaly in the folder /src/reports. The download reports PDF and XLSX are following the Data Grid View where you can filter and sort data.
+
+| Features | 
+|----------|
+| Load data from a log file. |
+| Interface auto-resize with content. |
+| Show data from endpoint request. |
+| Display the result nicely formatted. |
+| Save reports in the server and client side. |
+| Generate reports in CSV, JSON, PDF, XLSX. |
+| Filter and sort data from the interface. |
+| Customized CSV and JSON report with percentage. |
+
+## Endpoints
+
+| APIs | 
+|------|
+| http://127.0.0.1:5000/api/report |
+| http://127.0.0.1:5000/api/table |
+| http://127.0.0.1:5000/api/csv_report |
+| http://127.0.0.1:5000/api/json_report |
+
+## Unit Tests
+
+ ![Pic2](./exercise-1/src/static/img/pic2.png)
+
+| Pytest Unit Tests | 
+|-----------------|
+| Parses data |
+| Data returns |
+| Status codes |
+| Endpoints |
+| CSV file generation |
+| JSON file generation |
+
+## Commands
+
+| CMD | Description |
+|-----|-------------|
+| pip3 install -r requirements.txt | Install the dependencies. |
+| python3 src/app.py | Run the project. | 
+| python3 src/generate_log.py | Generate a sample of Log File |
+| python3 -m pytest -v | Run all tests. |
+
+## Web Interface
+
+http://127.0.0.1:5000/
+
+![Pic1](./exercise-1/src/static/img/pic1.png)
 
 # Exercise #2 
 ````
