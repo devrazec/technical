@@ -53,7 +53,6 @@ pip3 freeze > requirements.txt
 black .
 flake8 src/app.py
 flake8 src/generate_log.py
-flake8 src/generate_log.py
 flake8 tests/test_endpoint.py
 flake8 tests/test_app.py
 flake8 src/templates/index.html 
