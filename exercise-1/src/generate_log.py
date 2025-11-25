@@ -27,7 +27,11 @@ def generate():
         step = random.randint(1, 900)
         current += timedelta(seconds=step)
         ts = current.isoformat().replace("+00:00", "Z")
-        line = f"{ts};{rand_bytes()};{random.choice(STATUS_CHOICES)};{rand_ip()}"
+        line = (
+            f"{ts};{rand_bytes()};"
+            f"{random.choice(STATUS_CHOICES)};"
+            f"{rand_ip()}"
+        )
         lines.append(line)
     LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
     LOG_FILE.write_text("\n".join(lines) + "\n")

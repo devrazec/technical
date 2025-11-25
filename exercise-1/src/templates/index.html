@@ -10,8 +10,8 @@
     <style>
         body {
             font-family: Arial;
-            background: #000;
-            padding: 25px;
+            background: #000000;
+            padding: '25px';
         }
 
         h1,
@@ -25,9 +25,8 @@
             color: #fff;
         }
 
-        #log-table {
-            margin-top: 20px;
-        }
+        #log-table { margin-top: '20px'; }
+
     </style>
 </head>
 
@@ -48,7 +47,9 @@
     </div>
 
     <div id="log-table"></div>
-    <p style="padding-top: 10;">Note: The download reports CSV and JSON are sorted by the number of requests (DESC), STATUS is igual “OK” and saved automaticaly in the folder /src/reports. The download reports PDF and XLSX are following this Data Grid View where you can filter and sort data.</p>
+    <p style="padding-top: 10;">Note: The download reports CSV and JSON are sorted by the number of requests (DESC),
+        STATUS is igual "OK" and saved automaticaly in the folder /src/reports. The download reports PDF and XLSX are
+        following this Data Grid View where you can filter and sort data.</p>
 
     <!-- Tabulator JS -->
     <script src="{{ url_for('static', filename='assets/js/tabulator.min.js') }}"></script>

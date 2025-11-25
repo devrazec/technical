@@ -55,20 +55,20 @@ def table_log():
             ts_clean = raw_ts.replace("Z", "")
             dt = datetime.fromisoformat(ts_clean)
             entry["TIMESTAMP"] = dt.strftime("%d/%m/%Y")
-        except:
+        except (ValueError, TypeError):
             entry["TIMESTAMP"] = None
 
         # Bytes
         try:
             entry["BYTES"] = int(raw_bytes)
-        except:
+        except (ValueError, TypeError):
             entry["BYTES"] = 0
 
         # Status
         try:
             code = int(raw_status)
             entry["STATUS"] = STATUS_MAP.get(code, raw_status)
-        except:
+        except (ValueError, TypeError):
             entry["STATUS"] = raw_status
 
         # IP Address
@@ -110,16 +110,20 @@ def report_log():
         total_bytes += bytes_sent
 
     # Convert Bytes in Megabytes
-    total_bytes_mb = round(total_bytes / (1024 * 1024), 2)
+    # total_bytes_mb = round(total_bytes / (1024 * 1024), 2)
 
     # Build the list
     ip_summary = [
         {
             "ip": ip,
             "bytes": round(bytes_per_ip[ip]),
-            "bytes_percentage": round((bytes_per_ip[ip] / total_bytes) * 100, 2),
+            "bytes_percentage": round(
+                (bytes_per_ip[ip] / total_bytes) * 100, 2
+            ),
             "requests": count,
-            "requests_percentage": round((count / total_requests) * 100, 2),
+            "requests_percentage": round(
+                (count / total_requests) * 100, 2
+            ),
         }
         for ip, count in counter.items()
     ]
@@ -165,9 +169,13 @@ def csv_report():
     # Save CSV file in the folder src/reports/ipaddr.csv
     with open(file_path, "w", newline="") as f:
         writer = csv.writer(f)
-        writer.writerow(
-            ["ip", "bytes", "bytes_percentage", "requests", "requests_percentage"]
-        )
+        writer.writerow([
+            "ip",
+            "bytes",
+            "bytes_percentage",
+            "requests",
+            "requests_percentage"
+        ])
         for entry in ip_summary:
             writer.writerow(
                 [

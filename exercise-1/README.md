@@ -51,7 +51,12 @@ pip3 install Flask pytest pytest-flask
 pip3 install black flake8
 pip3 freeze > requirements.txt
 black .
-flake8 . 
+flake8 src/app.py
+flake8 src/generate_log.py
+flake8 src/generate_log.py
+flake8 tests/test_endpoint.py
+flake8 tests/test_app.py
+flake8 src/templates/index.html 
 
 Steps for old projects: 
 
@@ -111,6 +116,9 @@ Note: The download reports CSV and JSON are sorted by the number of requests (DE
 | python3 src/app.py | Run the project. | 
 | python3 src/generate_log.py | Generate a sample of Log File |
 | python3 -m pytest -v | Run all tests. |
+| black . | Auto-format code. |
+| flake8 src/app.py | Catch style issues, unused imports, or potential errors. |
+
 
 ## Web Interface
 
