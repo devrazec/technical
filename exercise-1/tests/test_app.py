@@ -3,10 +3,12 @@ from unittest.mock import patch
 import pytest
 from src.app import app, table_log, report_log
 
+
 @pytest.fixture
 def client():
     app.config["TESTING"] = True
     return app.test_client()
+
 
 # Test table_log() with a fake log file
 def test_table_log_parses_data_correctly(tmp_path):
@@ -28,6 +30,7 @@ def test_table_log_parses_data_correctly(tmp_path):
     assert data[0]["STATUS"] == "OK"
     assert data[0]["TIMESTAMP"] == "01/01/2024"
 
+
 # Test report_log() aggregation
 def test_report_log_counts_ok_requests(tmp_path):
     mock_log = """TIMESTAMP;BYTES;STATUS;REMOTE_ADDR
@@ -47,6 +50,7 @@ def test_report_log_counts_ok_requests(tmp_path):
     assert result[0]["requests"] == 2
     assert result[0]["bytes"] == 2000
 
+
 # Test API endpoint /api/table
 def test_api_table_returns_json(client, tmp_path):
     mock_log = """TIMESTAMP;BYTES;STATUS;REMOTE_ADDR
@@ -64,6 +68,7 @@ def test_api_table_returns_json(client, tmp_path):
     assert len(data) == 1
     assert data[0]["REMOTE_ADDR"] == "1.1.1.1"
 
+
 # Test API endpoint /api/report
 def test_api_report(client, tmp_path):
     mock_log = """TIMESTAMP;BYTES;STATUS;REMOTE_ADDR
@@ -80,6 +85,7 @@ def test_api_report(client, tmp_path):
     data = response.get_json()
     assert len(data) == 1
     assert data[0]["ip"] == "9.9.9.9"
+
 
 # Test CSV download endpoint
 def test_csv_report_download(client, tmp_path):
@@ -101,6 +107,7 @@ def test_csv_report_download(client, tmp_path):
 
     rows = list(csv.reader(response.data.decode().splitlines()))
     assert rows[1][0] == "8.8.8.8"
+
 
 # Test JSON download endpoint
 def test_json_report_download(client, tmp_path):

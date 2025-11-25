@@ -21,8 +21,9 @@ STATUS_MAP = {
     404: "Not Found",
     500: "Server Error",
     502: "Bad Gateway",
-    503: "Service Unavailable"
+    503: "Service Unavailable",
 }
+
 
 # Load log file from /src/logfiles/requests.log
 def table_log():
@@ -81,34 +82,35 @@ def table_log():
 
     return data
 
+
 # Generate source data for the reports (CSV, JSON)
 def report_log():
     logs = table_log()
-    
+
     # Counters
     counter = Counter()
     bytes_per_ip = Counter()
-    
+
     total_requests = 0
     total_bytes = 0
-    
+
     for log in logs:
         # Only include logs with STATUS == "OK"
         if log.get("STATUS") != "OK":
             continue
-        
+
         ip = log.get("REMOTE_ADDR")
         bytes_sent = int(log.get("BYTES", 0))
-        
+
         if ip:
             counter[ip] += 1
             bytes_per_ip[ip] += bytes_sent
-        
+
         total_requests += 1
         total_bytes += bytes_sent
 
     # Convert Bytes in Megabytes
-    total_bytes_mb = round(total_bytes / (1024*1024), 2)
+    total_bytes_mb = round(total_bytes / (1024 * 1024), 2)
 
     # Build the list
     ip_summary = [
@@ -127,20 +129,24 @@ def report_log():
 
     return ip_summary
 
+
 # Main route
 @app.route("/")
 def index():
     return render_template("index.html")
+
 
 # Endpoint for data table web interface
 @app.route("/api/table")
 def api_table():
     return jsonify(table_log())
 
+
 # Endpoint for data report
 @app.route("/api/report")
 def api_report():
     return jsonify(report_log())
+
 
 # Generate CSV report
 @app.route("/api/csv_report")
@@ -159,35 +165,44 @@ def csv_report():
     # Save CSV file in the folder src/reports/ipaddr.csv
     with open(file_path, "w", newline="") as f:
         writer = csv.writer(f)
-        writer.writerow(["ip", "bytes", "bytes_percentage", "requests", "requests_percentage"])
+        writer.writerow(
+            ["ip", "bytes", "bytes_percentage", "requests", "requests_percentage"]
+        )
         for entry in ip_summary:
-            writer.writerow([
-                entry["ip"],
-                entry["bytes"],
-                entry["bytes_percentage"],
-                entry["requests"],
-                entry["requests_percentage"]
-            ])
+            writer.writerow(
+                [
+                    entry["ip"],
+                    entry["bytes"],
+                    entry["bytes_percentage"],
+                    entry["requests"],
+                    entry["requests_percentage"],
+                ]
+            )
 
     # Generate CSV in memory for download
     output = io.StringIO()
     writer = csv.writer(output)
-    writer.writerow(["ip", "bytes", "bytes_percentage", "requests", "requests_percentage"])
+    writer.writerow(
+        ["ip", "bytes", "bytes_percentage", "requests", "requests_percentage"]
+    )
     for entry in ip_summary:
-        writer.writerow([
-            entry["ip"],
-            entry["bytes"],
-            entry["bytes_percentage"],
-            entry["requests"],
-            entry["requests_percentage"]
-        ])
+        writer.writerow(
+            [
+                entry["ip"],
+                entry["bytes"],
+                entry["bytes_percentage"],
+                entry["requests"],
+                entry["requests_percentage"],
+            ]
+        )
     output.seek(0)
 
     return Response(
         output,
         mimetype="text/csv",
-        headers={"Content-Disposition": "attachment;filename=ipaddr.csv"}
+        headers={"Content-Disposition": "attachment;filename=ipaddr.csv"},
     )
+
 
 # Generate JSON report
 @app.route("/api/json_report")
@@ -199,16 +214,18 @@ def json_report():
     # Map the lables
     mapped_summary = []
     for entry in ip_summary:
-        mapped_summary.append({
-            "ip": entry["ip"],
-            "bytes": entry["bytes"],
-            "bytes_percentage": entry["bytes_percentage"],
-            "requests": entry["requests"],
-            "requests_percentage": entry["requests_percentage"],
-        })
+        mapped_summary.append(
+            {
+                "ip": entry["ip"],
+                "bytes": entry["bytes"],
+                "bytes_percentage": entry["bytes_percentage"],
+                "requests": entry["requests"],
+                "requests_percentage": entry["requests_percentage"],
+            }
+        )
 
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    reports_path = os.path.join(base_dir, "reports")  
+    reports_path = os.path.join(base_dir, "reports")
 
     # Check the reports folder exists
     os.makedirs(reports_path, exist_ok=True)
@@ -223,8 +240,9 @@ def json_report():
         json_file_path,
         as_attachment=True,
         download_name="ipaddr.json",
-        mimetype="application/json"
+        mimetype="application/json",
     )
+
 
 if __name__ == "__main__":
     app.run(debug=True)

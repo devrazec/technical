@@ -48,7 +48,10 @@ python3 -m venv venv
 source venv/bin/activate
 touch requirements.txt
 pip3 install Flask pytest pytest-flask
+pip3 install black flake8
 pip3 freeze > requirements.txt
+black .
+flake8 . 
 
 Steps for old projects: 
 
